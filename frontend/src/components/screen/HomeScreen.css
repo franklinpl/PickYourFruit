@@ -1,0 +1,31 @@
+.homescreen{
+    width:1300px;
+    height:100vh;
+    max-width: 100%;
+    background: url('../../pictures/screenpicture.jpg');
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homescreen h2{
+    font-weight: 400;
+}
+
+.homescreen h2 span{
+    font-weight: 700;
+}
+
+.homescreen-button{
+    background-color: black;
+    color:#f4f4f4;
+    border:none;
+    height:35px;
+    width:200px;
+    cursor:pointer
+}
+
+.homescreen-button:hover{
+    background-color: cadetblue;
+}

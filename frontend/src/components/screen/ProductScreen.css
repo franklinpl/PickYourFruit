@@ -1,0 +1,7 @@
+.productscreen{
+    width:1300px;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:0px 10px 0px 10px
+}

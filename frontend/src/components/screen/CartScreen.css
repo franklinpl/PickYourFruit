@@ -1,0 +1,22 @@
+.cartscreen{
+    display:grid;
+    grid-template-columns:1fr 2fr
+}
+
+.cart-items{
+    display:flex;
+    flex-direction: column;
+}
+
+.items{
+    display:flex
+}
+
+.items div{
+    display:flex;
+    flex-direction: column;
+}
+
+.items img{
+    width:200px;
+}

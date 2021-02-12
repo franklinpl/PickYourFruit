@@ -1,5 +1,6 @@
 import './App.css';
 import {Route, Switch} from 'react-router-dom';
+import {connect} from 'react-redux'
 
 //components
 import Navbar from './components/Navbar'
@@ -9,9 +10,10 @@ import Contact from './components/Contact'
 import HomeScreen from './components/screen/HomeScreen'
 import ProductScreen from './components/screen/ProductScreen'
 import CartScreen from './components/screen/CartScreen'
+import InfoProduct from './components/screen/InfoProduct'
 
 
-function App() {
+function App({currentItem}) {
   return (
     <div className="App">
 
@@ -22,9 +24,16 @@ function App() {
           <Route exact path='/products' component={ProductScreen}/>
           <Route exact path='/contact' component={Contact}/>
           <Route exact path='/cart' component={CartScreen}/>
+          <Route exact path='/products/:id' component={InfoProduct}/>
         </Switch>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+      currentItem: state.shop.currentItem
+  }
+}
+
+export default connect (mapStateToProps)(App);

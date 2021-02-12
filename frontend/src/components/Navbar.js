@@ -1,10 +1,17 @@
 import './Navbar.css'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
 
-function Navbar(){
+function Navbar({cart}){
 
-    const [cart, setCart] = useState(0)
+    const [qtyInCart, setQtyInCart] = useState('')
+
+    useEffect(() => {
+        let sum = 0;
+        cart.map(item => sum+=item.qty)
+        setQtyInCart(sum)
+    },[cart])
 
     return(
         <div className='navbar'>
@@ -27,7 +34,7 @@ function Navbar(){
                 
                 <Link to='/cart'>
                     <h2>Cart: 
-                        <span>{cart}</span>
+                        <span>{qtyInCart}</span>
                     </h2>
                 </Link>
             
@@ -36,4 +43,10 @@ function Navbar(){
     )
 }
 
-export default Navbar
+const mapStateToProps = (state) => {
+    return {
+        cart: state.shop.cart
+    }
+}
+
+export default connect (mapStateToProps) (Navbar)

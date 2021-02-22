@@ -17,20 +17,23 @@
     margin-top:10px;
     font-family: 'Roboto';
     border:none;
-    cursor:pointer
+    cursor:pointer;
+    font-size: 1rem;
 }
 
 .add-to-cart{
     background-color: black;
     color:#f4f4f4;
-    width:100px
+    width:120px;
+    border-radius:10px
 }
 
 .info-button{
     width:80px;
     margin-right: 10px;
-    background-color: rgb(96, 136, 96);
-    color:white
+    background-color:#5bc0de;
+    color:white;
+    border-radius:10px
 }
 
 .add-to-cart:hover{
@@ -39,7 +42,7 @@
 
 .product-name{
     color:cadetblue;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: 'Roboto';
     margin-top: -0px;
     margin-right: 20px;

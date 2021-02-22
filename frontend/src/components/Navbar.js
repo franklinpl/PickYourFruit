@@ -9,9 +9,14 @@ function Navbar({cart}){
 
     useEffect(() => {
         let sum = 0;
-        cart.map(item => sum+=item.qty)
-        setQtyInCart(sum)
-    },[cart])
+        let items = 0
+        cart.forEach((item) => {
+            items += item.qty;
+            sum += items*item.qty
+        }
+            )
+        setQtyInCart(items)
+    },[cart, qtyInCart])
 
     return(
         <div className='navbar'>
@@ -33,8 +38,10 @@ function Navbar({cart}){
                 </Link>
                 
                 <Link to='/cart'>
-                    <h2>Cart: 
-                        <span>{qtyInCart}</span>
+                    <h2> <span id='navbar-cart-span'>Cart: </span>
+                        <span id='qtyInCart'>
+                            <span>{qtyInCart}</span>
+                        </span>
                     </h2>
                 </Link>
             

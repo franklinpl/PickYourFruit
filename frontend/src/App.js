@@ -11,6 +11,7 @@ import HomeScreen from './components/screen/HomeScreen'
 import ProductScreen from './components/screen/ProductScreen'
 import CartScreen from './components/screen/CartScreen'
 import InfoProduct from './components/screen/InfoProduct'
+import Checkout from './components/screen/CheckoutScreen.js'
 
 
 function App({currentItem}) {
@@ -25,6 +26,7 @@ function App({currentItem}) {
           <Route exact path='/contact' component={Contact}/>
           <Route exact path='/cart' component={CartScreen}/>
           <Route exact path='/products/:id' component={InfoProduct}/>
+          <Route exact path='/checkout' component={Checkout}/>
         </Switch>
     </div>
   );

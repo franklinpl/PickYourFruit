@@ -20,6 +20,20 @@
     width:1300px;
 }
 
+#qtyInCart{
+    background: black;
+    color:#f4f4f4;
+    border-radius: 30px;
+}
+
+#qtyInCart span{
+    margin:5px
+}
+
+#navbar-cart-span{
+    margin-right:3px
+}
+
 .navbar-components h2{
     font-size: 1.5rem;
     font-weight: 400;

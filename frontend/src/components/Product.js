@@ -15,9 +15,9 @@ function Product({data, addToCart, loadCurrentItem}){
                     <h2 className='product-price'>£{data.price}</h2>
                 </div>
                 <Link to={`/products/${data.id}`}>
-                    <button className='info-button' onClick={() => loadCurrentItem(data)}>Info</button>
+                    <button className='info-button' onClick={() => loadCurrentItem(data)}><i className='fas fa-info-circle'/></button>
                 </Link>
-                <button className='add-to-cart' onClick={() => addToCart(data.id)}>Add to cart</button>
+                <button className='add-to-cart' onClick={() => addToCart(data.id)}><i className='fas fa-shopping-cart'/></button>
             </div>
         </div>
     )

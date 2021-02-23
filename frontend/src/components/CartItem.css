@@ -52,3 +52,12 @@
 .fa-trash-alt{
     color:white
 }
+
+@media(max-width:600px){
+    .items-and-delete-button{margin:10px; width:95%}
+}
+
+@media(max-width:500px){
+    .items img{width:150px; height:125px}
+    .items div h2{font-size:1.3rem; margin:10px 0px 0px 20px}
+}

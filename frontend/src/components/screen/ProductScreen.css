@@ -5,3 +5,11 @@
     grid-template-columns: repeat(3, 1fr);
     margin:0px 10px 0px 10px
 }
+
+@media(max-width:950px){
+    .productscreen{grid-template-columns: repeat(2, 1fr); justify-items: center;}
+}
+
+@media(max-width:570px){
+    .productscreen{grid-template-columns: repeat(1, 1fr);}
+}

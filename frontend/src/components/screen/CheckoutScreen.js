@@ -137,9 +137,15 @@ function Checkout({cart}){
             
                 <div className='summary-and-pay'>
                     <div className='checkout-summary'>
-                        <h2>Chechout summary</h2>
-                        <h3>{qtyInCart} items: £{totalSum} pounds</h3>
+                        <h2 id='summary-title'>Chechout summary</h2>
+                        {cart.map(item => {
+                            return <div className='summary-item'>
+                                <h3>{item.name} : £{item.description_price}</h3>
+                                <h4>qty: {item.qty}</h4>
+                            </div>
+                        })}
                     </div>
+                    <h2 id='summary-total'>Total: £{totalSum}</h2>
                     <button>Pay now</button>
                 </div>
             </div>

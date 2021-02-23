@@ -1,10 +1,12 @@
 import './App.css';
+import {useState} from 'react'
 import {Route, Switch} from 'react-router-dom';
 import {connect} from 'react-redux'
 
 //components
 import Navbar from './components/Navbar'
 import Contact from './components/Contact'
+import NavigationMenu from './components/NavigationMenu'
 
 //screens
 import HomeScreen from './components/screen/HomeScreen'
@@ -15,10 +17,18 @@ import Checkout from './components/screen/CheckoutScreen.js'
 
 
 function App({currentItem}) {
+
+  const [show, setShow] = useState(false)
+
+  const changeShow = () => {
+    show ? setShow(false) : setShow(true)
+  }
+
   return (
     <div className="App">
 
-        <Navbar/>
+        <Navbar show={show} changeShow={changeShow}/>
+        <NavigationMenu show={show} changeShow={changeShow}/>
 
         <Switch>
           <Route exact path='/' component={HomeScreen}/>

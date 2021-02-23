@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-function Navbar({cart}){
+function Navbar({cart, changeShow}){
 
     const [qtyInCart, setQtyInCart] = useState('')
 
@@ -26,6 +26,12 @@ function Navbar({cart}){
                     PickYourFruit
                 </h2>
             </Link>
+
+            <div className='hamburger-menu' onClick={() => changeShow()}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             
             <div className='navbar-components'>
                 

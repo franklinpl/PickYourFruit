@@ -1,0 +1,35 @@
+.cartscreen{
+    display:flex;
+    flex-direction: column;
+}
+
+.summary{
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width:400px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.summary h2{
+    color:white;
+    margin-left:10px
+}
+
+.summary button{
+    background: black;
+    color:#f4f4f4;
+    margin-left:20px;
+    cursor:pointer;
+    height:35px;
+    width:170px;
+    border:none
+}
+
+.summary button:hover{
+    background:#f4f4f4;
+    color:black
+}

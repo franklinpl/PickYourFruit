@@ -1,0 +1,21 @@
+.navigation-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 175, 175);
+    margin-bottom: 20px;
+}
+
+.navigation-menu a{
+    text-decoration: none;
+}
+
+.navigation-menu h2{
+    margin-top:0px;
+    color:black
+}
+
+.navigation-menu h2:first-child{
+    margin-top:10px
+}

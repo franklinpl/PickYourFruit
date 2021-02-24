@@ -1,0 +1,79 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    width:1300px;
+    max-width:100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-logo{
+    font-size: 2rem;
+    margin-left:2rem;
+    font-weight: 700;
+    color:black
+}
+
+.navbar-components{
+    display:flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width:1300px;
+}
+
+#qtyInCart{
+    background: black;
+    color:#f4f4f4;
+    border-radius: 30px;
+}
+
+#qtyInCart span{
+    margin:5px
+}
+
+#navbar-cart-span{
+    margin-right:3px
+}
+
+.navbar-components h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:black;
+    font-family: 'Roboto';
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.hamburger-menu{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    display:none
+}
+
+.hamburger-menu div{
+    width:100%;
+    height:5px;
+    background-color: black;
+    margin-bottom:7px;
+    border-radius: 10px;
+}
+
+@media (max-width:770px){
+    .navbar-components h2{font-size: 1.2rem;}
+}
+
+@media (max-width:600px){
+    .navbar-logo{font-size: 1.7rem;}
+}
+
+@media (max-width:560px){
+    .navbar-logo{font-size: 1.5rem;}
+}
+
+@media(max-width:490px){
+    .hamburger-menu{display: block; margin-right: 20px;}
+    .navbar-components{display: none;}
+    .navbar{justify-content: space-between;}
+}

@@ -1,0 +1,46 @@
+.contact{
+    width:1300px;
+    max-width: 100%;
+}
+
+.contact form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+form label{
+    font-size: 2rem;
+    margin-top:10px
+}
+
+form input{
+    width: 400px;
+    height:25px;
+    margin-top:10px
+}
+
+form button{
+    background-color: black;
+    color:#f4f4f4;
+    border:none;
+    height:35px;
+    width:380px;
+    cursor:pointer;
+    margin-top:20px
+}
+
+form button:hover{
+    width:400px; 
+    height:38px
+}
+
+form button:hover{
+    background-color: cadetblue;
+}
+
+textarea{
+    width: 400px;
+    margin-top:10px
+}

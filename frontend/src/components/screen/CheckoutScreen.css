@@ -21,7 +21,7 @@
 }
 
 .summary-and-pay{
-    border:2px solid black;
+    border:5px solid black;
     background:#f4f4f4;
     margin:20px 20px 0px 0px;
     color:black
@@ -91,3 +91,13 @@
 .zero-cart button:hover{
         background-color: cadetblue;
     }
+
+    
+@media(max-width:900px){
+    .checkout{grid-template-columns: 1fr; justify-items: center;}
+    .summary-and-pay{margin-bottom: 10px;}
+}
+
+@media(max-width:440px){
+    .personal-info input, .card-info{max-width: 100%;}
+}

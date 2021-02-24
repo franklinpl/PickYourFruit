@@ -87,6 +87,7 @@ function Checkout({cart}){
                 <div className='personal-info'>
                 <form>
                     {/* full name, cellphone, email, house street, house number, zip code */}
+                    <h1>Personal information</h1>
                     <div className='name'>
                         <label>Name:</label>
                         <input type='text' onChange={onChangeName}/>
@@ -117,6 +118,7 @@ function Checkout({cart}){
             <div className='card-info'>
                 {/* Card holder, card number, expiry date, CVV */}
                 <form>
+                    <h1>Card information</h1>
                     <div className='card-holder'>
                         <label>Card holder:</label>
                         <input type='text' onChangeName={onChangeCardHolder}/>

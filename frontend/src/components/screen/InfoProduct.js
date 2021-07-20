@@ -19,10 +19,12 @@ function InfoProduct({currentItem, products, addToCart, loadCurrentItem}){
             <div className='other-products'>
                 <h1>Other fruits you may want to try:</h1>
                 <div className='other-fruits'>
-                    {products.filter(item => item.id !== currentItem.id).map(item => <div className='item'>
+                    {products.filter(item => item.id !== currentItem.id).map(item => <div className='other-fruits-item' key={item.id}>
                         <Link to={`/products/${item.id}`}>
                             <img className='other-products-img' src={item.imageUrl} onClick={() => loadCurrentItem(item)}/>
                         </Link>
+                        <h2>{item.name}</h2>
+                        <h3>£{item.price}</h3>
                     </div>)}
                 </div>
             </div>

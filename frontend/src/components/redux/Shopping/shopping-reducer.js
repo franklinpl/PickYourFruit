@@ -16,7 +16,7 @@ const INITIAL_STATE = {
             id: 2,
             price:3,
             description_price:'3/300g box',
-            description: 'An all times favorite. Put on some dessert or eat after a meal',
+            description: 'Just delicious! Try it today',
             stock: 8,
             imageUrl:'https://images.pexels.com/photos/70862/pexels-photo-70862.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
         },
@@ -24,8 +24,8 @@ const INITIAL_STATE = {
             name: 'Raspberry',
             id: 3,
             price:3.5,
-            description_price:'3.5/200g box',
-            description: 'An all times favorite. Put on some dessert or eat after a meal',
+            description_price:'2/200g box',
+            description: 'The sour nature of the berry makes it perfect to eat with something sweet',
             stock: 5,
             imageUrl:'https://images.pexels.com/photos/59999/raspberries-fruits-fruit-berries-59999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
         },
@@ -34,7 +34,7 @@ const INITIAL_STATE = {
             id: 4,
             price:1.5,
             description_price:'1.5/kg',
-            description: 'An all times favorite. Put on some dessert or eat after a meal',
+            description: 'One apple a day keeps the doctor away.',
             stock: 20,
             imageUrl:'https://images.pexels.com/photos/2487443/pexels-photo-2487443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
         },
@@ -43,7 +43,7 @@ const INITIAL_STATE = {
             id: 5,
             price:2,
             description_price:'2.5/kg',
-            description: 'An all times favorite. Put on some dessert or eat after a meal',
+            description: 'The vitamin C helps your immunologic system. Well, and it tastes good.',
             stock: 30,
             imageUrl:'https://images.pexels.com/photos/2084239/pexels-photo-2084239.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
         },
@@ -52,7 +52,7 @@ const INITIAL_STATE = {
             id: 6,
             price:2,
             description_price:'2.5/12 units',
-            description: 'An all times favorite. Put on some dessert or eat after a meal',
+            description: 'Fiber, taste, this fruit has it all!',
             stock: 15,
             imageUrl:'https://images.unsplash.com/photo-1589468619550-3c6350b50ce0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhbmFuYXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
         }

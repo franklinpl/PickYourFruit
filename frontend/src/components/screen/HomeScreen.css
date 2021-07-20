@@ -32,3 +32,7 @@
 .homescreen-button:hover{
     background-color: cadetblue;
 }
+
+@media(max-width:570px){
+    .homescreen h2{margin:30px 10px 10px 10px; text-align: center;}
+}

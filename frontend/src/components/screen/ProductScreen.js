@@ -6,7 +6,7 @@ function ProductScreen({products}){
     return(
         <div className='productscreen'>
             {
-                products.map(item => <Product data={item}/>)
+                products.map(item => <Product data={item} key={item.id}/>)
             }
         </div>
     )

@@ -13,30 +13,21 @@ app.post('/', (req, res, next) => {
     var name = req.body.name
     var email = req.body.email
     var phone = req.body.phone
+    var subject = req.body.subject
     var message = req.body.message
 
-    var mail = {
-        from: name,
-        to: '8c6ab58c11-21667c@inbox.mailtrap.io',
-        subject: 'from PickYourFruit app',
-        text: message
-    }
-
-    transporter.sendMail(mail, (err, data) => {
-        if (err) {
-            res.json({
-                status: fail
-            })
-        }
-        else {
-            res.json({
-                status:success
-            })
-        }
-    })
+   transporter.sendMail({
+       from: email,
+       to: '8c6ab58c11-21667c@inbox.mailtrap.io',
+       subject: subject,
+       text: message
+   }, (err, info) => {
+       console.log(info.envelope);
+       console.log(info.messageId)
+   })
 })
 
-const transporter = nodemailer.createTransport({
+let transporter = nodemailer.createTransport({
     host: 'smtp.mailtrap.io',
     port: 2525,
     auth: {

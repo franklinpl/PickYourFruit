@@ -27,7 +27,7 @@ function CartScreen({cart}){
         : 
         <div className='cartscreen'>
             <div className='cart-items'>
-                {cart.map(item => <CartItem data={item}/>)}
+                {cart.map(item => <CartItem data={item} key={item.id}/>)}
             </div>
             <div className='summary'>
                 <h2 className='cart-total'>TOTAL: £ {totalPrice}</h2>

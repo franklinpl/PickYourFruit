@@ -1,0 +1,104 @@
+.info-product{
+    width:1300px;
+    max-width: 100%;
+}
+
+.each-item{
+    display:flex
+}
+
+.each-item img{
+    width:600px
+}
+
+.info-right, .info-product{
+    margin-left:15px
+}
+
+.info-name, .info-description, .info-price{
+    font-family: 'Roboto';
+}
+
+.info-name{
+    color:cadetblue;
+    font-size:2.5rem
+}
+
+.info-description{
+    font-size:1.6rem;
+    font-weight: 400;
+}
+
+.info-price{font-weight: 600; font-size: 2rem;}
+
+.info-right button{
+    background-color: black;
+    color:#f4f4f4;
+    width:150px;
+    border:none;
+    height:30px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.info-right button:hover{
+    background-color: cadetblue;
+}
+
+.other-fruits{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.other-products-img{
+    width:200px;
+    height:150px;
+    cursor:pointer
+}
+
+.other-products-img:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+.other-fruits-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-fruits-item h2{
+    color:cadetblue;
+    margin-top:0rem
+}
+
+.other-fruits-item h3{
+    margin-top:-1rem
+}
+
+@media(max-width:1074px){
+    .other-products-img{width:175px; height:120px}
+}
+
+@media(max-width:950px){
+    .other-fruits{grid-template-columns: repeat(4, 1fr)}
+    .info-description{font-size:20px}
+    .info-name{font-size:30px}
+    .each-item img{width:400px}
+}
+
+@media(max-width:732px){
+    .other-fruits{grid-template-columns: repeat(3, 1fr)}
+    .info-description{font-size:18px}
+    .info-name{font-size:28px}
+    .each-item img{width:300px}
+}
+
+@media(max-width:556px){
+    .other-fruits{grid-template-columns: repeat(2, 1fr)}
+    .info-description{font-size:16px}
+    .info-name{font-size:24px}
+    .info-price{font-size:1.6rem}
+}
+
+
+
